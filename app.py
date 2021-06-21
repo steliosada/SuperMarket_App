@@ -408,8 +408,11 @@ def orderHistory():
             return Response("Admins Cannot access this menu",status=500,mimetype="application/json")
         global user_email
         user1 = users.find_one({"email" : user_email})
-        orderHistory = user1["Order History"]
-        return Response(f"Order History: \n {orderHistory}", status=200 , mimetype='application/json')
+        if "Order History" not in user1 :
+            return Response("No orders on your order history.",status=404,mimetype="application/json")
+        else:
+            orderHistory = user1["Order History"]
+            return Response(f"Order History: \n {orderHistory}", status=200 , mimetype='application/json')
 
 
 if __name__ == '__main__':
