@@ -222,9 +222,9 @@ def search():
         return Response("Information incomplete",status=401,mimetype="application/json")
     else:
         if "name" in data:
-            product = products.find({"name":data['name']}).sort("name", pymongo.ASCENDING) #de douleuei to sort
+            product = products.find({"name":data['name']}).sort("name", pymongo.ASCENDING)
         if  "category" in data:
-            product = list(products.find({"category":data['category']}))
+            product = list(products.find({"category":data['category']}).sort("name", pymongo.ASCENDING))
         
 
             if "id" in data:
