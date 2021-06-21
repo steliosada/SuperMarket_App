@@ -12,7 +12,7 @@ This project requires **Python** and the following Python libraries installed:
 - [time]
 - [bson.json_util]
 - [bson import ObjectId]
-- 
+
 
 ### Τροπος Λειτουργιας
 
