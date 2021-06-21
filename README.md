@@ -18,6 +18,8 @@ This project requires **Python** and the following Python libraries installed:
 
 - Δημιουργια ενος docker image που συνδεεται με ενα container της MongoDB , εισαγωγη της βασης δεδομενων DSMarkets που περιεχει τα collections "Users" , "Products" στο image.
 - Εκκινηση του Docker Image , εισαγωγη του κωδικα στο Visual Studio Code με την ονομασια app.py εκκινηση του κωδικα με την επιλογη Flask.
+- Για την δοκιμη ανοιγουμε το postman και δημιουργουμε το request που επιθυμουμε να δοκιμασουμε εισαγοντας στο url http://127.0.0.1:5000/ + το @app route του function. πχ. για το login http://127.0.0.1:5000/login επειτα πατωντας body εισαγουμε στην επιλογη raw τις πληροφοριες σε μορφη json.![image](https://user-images.githubusercontent.com/62759358/122769937-aab38900-d2ad-11eb-8599-a9927447dd6b.png)
+
 
 ### Κωδικας 
 
